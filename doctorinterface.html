@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Interface - Smart Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #22c55e;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 500px;
+    }
+    .cube {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+      text-decoration: none; /* for anchor */
+      color: inherit;        /* keep text color */
+      display: block;        /* make anchor behave like block */
+    }
+    .cube:hover {
+      transform: scale(1.05);
+    }
+    .cube-icon {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #22c55e;
+    }
+    .cube-title {
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 8px;
+    }
+    .cube-desc {
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Smart Clinic</h1>
+
+  <div class="grid">
+    <!-- Section 1: Queue Dashboard -->
+    <a class="cube" onclick="window.location.href='dashboard1.html'">
+      <div class="cube-icon">👥</div>
+      <div class="cube-title">Queue</div>
+      <div class="cube-desc">View real-time queue</div>
+    </a>
+
+    <!-- Section 2: Access Patient Data -->
+    <a class="cube" href="patientdata.html">
+      <div class="cube-icon">🔍</div>
+      <div class="cube-title">Patient Data</div>
+      <div class="cube-desc">Access patient records</div>
+    </a>
+  </div>
+</body>
+</html>
